@@ -1,0 +1,203 @@
+    /* Частина 1 */
+
+    body {
+      margin: 25px;
+      padding: 0;
+      background: url(sky.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* використайте універсальний селектор */
+    header h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    
+    header h1 {
+      padding: 30px;
+      background: linear-gradient(grey, white, grey);
+      text-align: center;
+      margin-bottom: 0; /* Видалити нижній відступ */
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f4f7;
+      padding: 10px 0;
+  }
+  
+    .navbar a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #34495e;
+        padding: 10px;
+        position: relative;
+        font-size: 1.2em;
+    }
+    
+    .navbar a:not(:last-child)::after {
+        content: "|";
+        color: #34495e;
+        position: absolute;
+        right: -5px;
+        font-weight: bold;
+    }
+    
+    .navbar a:hover {
+        color: #2c3e50;
+    }
+
+    title {
+      font-size: 2rem;
+      text-align: center;
+      text-shadow: grey 2px 2px;
+    }
+
+    /* використайте селектор елемента main */
+    main {
+      float : left;
+      max-width: 75%;
+    }
+
+    /* використайте селектор потомка для  класу side-menu всередині елемента aside */
+    aside .side-menu {
+      float: right;
+      max-width: 25%x;
+      min-width: 200px;
+      max-height: 200px;
+      background-color: #e4e6e5;
+      border: 1px solid steelblue;
+      border-radius: 5px;
+      margin: 80px 0 0 20px;
+    }
+
+    /* використайте селектор  li всередині  класу side-menu */
+    .side-menu li{
+      margin: 7px 0;
+      list-style: none;
+    }
+
+    /* використайте селектор ідентифікатора для першого li (заголовок меню) */
+   
+    #menu-header {
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-decoration: underline;
+      color: black;
+    }
+
+    /* використайте селектор потомка для тегов li всередині .side-menu  */
+    /* та селектор дочірніх елементов для тегів <a> всередині li  */
+    .side-menu li a {
+      text-decoration: none;
+      color: steelblue;
+      padding: 2px;
+    }
+
+    /* використайте селектор для всіх посилань <a> з псевдо-класом, за яким проводят курсором мишки */
+    .side-menu a {
+      color: turquoise;
+      font-weight: bold;
+    }
+
+    /* використайте заголовки h2 з класом main-content */
+    .main-content h2 {
+      font-size: 2rem;
+      text-decoration: underline;
+      text-align: center;
+      text-shadow: grey 2px 2px;
+    }
+
+    /* використайте тег p з класом main-content */
+    .main-content p {
+      border: 1px solid #999;
+      border-radius: 5px;
+      padding: 6px;
+      margin-right: 20px;
+      color: #000;
+    }
+
+     /* використайте  значення атрибуту id-data ="1" з тегом p  та з класом main-content */
+
+     .main-content p[id-data="1"] {
+     background-color: #cdd4d6;
+    }
+     /* використайте  значення атрибуту id-data ="2" з тегом p  та з класом main-content */
+
+     .main-content p[id-data="2"]  {
+    background-color: #e6f4f8;
+    }
+
+    /* виберіть першу лінію через псевдо-елемент усіх параграфів p, як дочірні до блока з класом main-content */
+    .main-content p::first-line {
+      color: darkblue
+    }
+
+    /* виберіть першу букву через псевдо-елемент усіх параграфів p, як дочірні до блока з класом  main-content */
+    .main-content p::first-letter {
+      text-decoration: underline;
+      font-size: 1.6rem;
+    }
+
+    /* використайте  p з дочірнім  img */
+    p img {
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin: 20px;
+      transition: all 3s;
+     
+    }
+    /* використайте  p з дочірнім  img, при наведенні курсора на зображення воно має збільшитись*/
+
+    p img {
+      transform: scale(2);
+      /* або спробуйте  нижчий варіант. Порівняйте їх*/
+      /* width: 75px;
+      height: 75px; */
+    }
+
+    /* виберіть футер за його атрибутом id */
+    footer p {
+      clear: both;
+      text-align: center;
+      height: 100px;
+      background:gray;
+      vertical-align: middle;
+      line-height: 100px;
+    }
+
+    /* Частина 2 */
+
+    /*---- Блок навігації ----*/
+	
+    nav {  
+      margin: 0;
+      border-bottom: #adb1b2 solid 1px;
+      padding: 25px 5px;
+      background: #e4e6e5;
+      text-align: center;
+    }
+
+    nav a {
+      padding: 0px 32px;
+      border-right: #868B8F dotted 2px;
+      font-size: 18px;
+      color: #044368;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline; 
+      color: rgb(115, 103, 124);
+    }
+    
+    nav a:last-child {
+      border-right: none;
+    }
+  
+/*---- кінець блока навігації ----*/
+  

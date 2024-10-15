@@ -1,0 +1,72 @@
+:root {
+    --nav-ul-li-a: white;
+    --label-color: rgb(64, 43, 10);
+    --header-bc: #007BFF;
+}
+    
+
+label {
+    color: var(--label-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: var(--header-bc);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+label{
+    margin-top: 12rem;
+}
+
+button{
+    margin-top: 2rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--nav-ul-li-a);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: white;
+}
+
+
+/* Стилі для звичайного стану зображення */
+img, .icon {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Плавний перехід */
+    width: 150px; /* Задайте розмір за бажанням */
+    height: 150px;
+}
+
+/* Ефекти при наведенні */
+img:hover, .icon:hover {
+    transform: scale(1.1); /* Масштабування зображення на 10% */
+    filter: brightness(1.2) contrast(1.1) saturate(1.5); /* Зміна яскравості, контрасту і насиченості */
+}
